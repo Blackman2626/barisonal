@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: darkolivegreen;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem;
+}
+
+.mobilediv {
+    display: block;
+    margin: 0 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: black;
+    font-size: 17px;
+    transition: 0.9s ease;
+    letter-spacing: 3px;
+    margin: 0 20px;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    color: cornsilk;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 70px;
+}
+
+.container h2{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+}
+
+.container p{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+}
+
+.berber-img {
+    width: 600px;
+    height: 403px;
+    box-shadow: 0 0 1rem;
+    border-radius: 10px;
+    border: 5px solid rgb(85, 107, 47);
+}
+
+.berber-img img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    line-height: 1.8;
+    padding-right: 100px;
+    font-size: 18px;
+}
+
+.content h2 {
+    font-size: 40px;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 45px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: darkolivegreen;
+    clip-path: circle(500px at left);
+}
+
+.hak {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.hak-img {
+    width: 100%;
+    height: auto;
+}
+
+.hak-img img {
+    width: 600px;
+    height: auto;
+    box-shadow: 0 0 1rem;
+    border-radius: 10px;
+    border: 5px solid rgb(85, 107, 47);
+}
+
+.hak-content {
+    font-size: 18px;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.hak-content h2 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.hak-content p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;  
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+}
+
+.contact-img {
+    width: 100%;
+    height: auto;
+    flex: 1;   
+}
+
+.contact-img img{
+    width: 600px;
+    height: auto;
+    box-shadow: 0 0 1rem;
+    border-radius: 10px;
+    border: 5px solid rgb(85, 107, 47);
+}
+.contact-content{
+    padding: 10px;
+    flex: 1;
+    margin-left: 50px   ;
+    line-height: 1.8; 
+}
+
+.contact-content h2{
+font-size: 25px;
+margin-bottom: 10px;
+font-family: 'Exo 2', sans-serif;
+
+}
+
+.contact-content p{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 23px;
+}
+
+span{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color:white;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+    background:darkolivegreen;
+}
+
+.social-media a:hover{
+    background:darkolivegreen;
+    color: white;
+    box-shadow: 0 0 3rem darkolivegreen;
+ }
+
+ .text a{
+        position: relative;
+        right:50px;
+        bottom: -270px;
+        color: darkolivegreen;
+        font-size: 50px;
+ }
+
+
+@media screen and (max-width:600px) {
+    
+    header {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .logo {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    header nav a {
+        font-size: 15px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .container .content {
+        width: 390px;
+        height: auto;
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    .container .content h2,
+    .hak-content h2,
+    .contact-content h2 {
+        font-size: 21px;
+        font-weight: 900;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    .container .content p,
+    .hak-content p{
+        font-size: 15px;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    .container .berber-img {
+        width: 100%;
+        height: auto;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hak {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hak .hak-img {
+        width: 100%;
+        height: auto;
+        order: 2;
+    }
+
+    .hak .hak-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+ }
+ .contact-content p{
+    font-size: 19px;
+    font-family: 'Exo 2', sans-serif;
+ }
+
+ span{
+    font-size: 17px;
+    font-family: 'Exo 2', sans-serif;
+ }
+
+ .contact-content{
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+ 
+ }
+  .contact-img {
+        width: 100%;
+        height: auto;
+        order: 2;
+    }
+
+    .contact-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text{
+        display: none;
+    }
+
+
+
+}
+
+/* @media screen and (max-width:376px){
+    .hak{
+        width: 100%;
+        height: 100vh;
+        margin-top:60px ;
+    }
+
+    .container{
+      width: 100%;
+      height: auto;
+    }
+
+    .contact{
+        width: 100%;
+        height: auto;
+        margin-top:70px;
+      }
+     
+   
+        
+  
+       
+    } */
+
+
+
+
+
+
+}
