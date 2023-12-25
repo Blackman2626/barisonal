@@ -19,6 +19,7 @@ header {
     width: 100%;
     height: 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 20px 10px;
@@ -27,9 +28,40 @@ header {
     box-shadow: 0 0 1rem;
 }
 
-.mobilediv {
-    display: block;
-    margin: 0 10px;
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background: linear-gradient(darkolivegreen, #ffff);
+    backdrop-filter: blur (10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.sidebar a{
+    margin-top:20px ;
+}
+
+.kaydet{
+    display: none;
+}
+
+
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: white;
+    margin-right: 30px;
 }
 
 nav {
@@ -148,7 +180,7 @@ nav a:hover {
 
 .hak-content p {
     font-family: 'Exo 2', sans-serif;
-    font-size: 20px;  
+    font-size: 20px;
 }
 
 .contact {
@@ -163,7 +195,7 @@ nav a:hover {
 .contact-img {
     width: 100%;
     height: auto;
-    flex: 1;   
+    flex: 1;
 }
 
 .contact-img img{
@@ -177,7 +209,7 @@ nav a:hover {
     padding: 10px;
     flex: 1;
     margin-left: 50px   ;
-    line-height: 1.8; 
+    line-height: 1.8;
 }
 
 .contact-content h2{
@@ -241,7 +273,7 @@ span{
     align-items: center;
     line-height: 7;
  }
- 
+
  .footer-content p{
     font-size: 15px;
     letter-spacing: 1px ;
@@ -249,19 +281,19 @@ span{
  }
 
 @media screen and (max-width:600px) {
-    
+
     header {
         width: 100%;
         height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+
     }
 
     header .logo {
         font-size: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+
+
     }
 
     header nav a {
@@ -344,7 +376,7 @@ span{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-     
+
  }
  .contact-content p{
     font-size: 19px;
@@ -360,7 +392,7 @@ span{
     padding: 20px;
     margin: 0;
     text-align: center;
- 
+
  }
   .contact-img {
         width: 100%;
@@ -383,6 +415,22 @@ span{
 
     .footer p{
         font-size: 13px;
+    }
+
+
+    .kaybol{
+        display: none;
+    }
+
+    .kaydet{
+        display: block;
+    }
+
+}
+
+@media(max-width:400px) {
+    .sidebar{
+        width: 100%;
     }
 
 }
