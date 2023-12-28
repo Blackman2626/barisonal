@@ -28,7 +28,7 @@ header {
     box-shadow: 0 0 1rem;
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -37,7 +37,7 @@ header {
     z-index: 999;
     background: linear-gradient(darkolivegreen, #ffff);
     backdrop-filter: blur (10px);
-    box-shadow: -10px 0 10px rgb(0, 0, 0,0.1);
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
     align-items: center;
@@ -46,17 +46,17 @@ header {
 
 }
 
-.sidebar a{
-    margin-top:20px ;
+.sidebar a {
+    margin-top: 20px;
 }
 
-.kaydet{
+.kaydet {
     display: none;
 }
 
 
 
-.list{
+.list {
     list-style: none;
     display: flex;
     gap: 30px;
@@ -71,18 +71,34 @@ nav {
 }
 
 nav a {
-    display: block;
+    display: inline-block block;
     color: black;
     font-size: 17px;
     transition: 0.9s ease;
     letter-spacing: 3px;
     margin: 0 20px;
     font-weight: bolder;
+    line-height: 1.5;
 }
 
-nav a:hover {
-    color: cornsilk;
+nav a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: rgba(0, 0, 0, 0.768);
+    transition: width .3s ease-in-out;
+   
 }
+
+nav a:hover:after,
+nav a:focus:after {
+    width: 100%;
+    
+}
+
+
+
 
 .container {
     position: relative;
@@ -93,12 +109,12 @@ nav a:hover {
     padding: 70px;
 }
 
-.container h2{
+.container h2 {
     font-family: 'Exo 2', sans-serif;
     font-size: 25px;
 }
 
-.container p{
+.container p {
     font-family: 'Exo 2', sans-serif;
     font-size: 20px;
 }
@@ -198,38 +214,39 @@ nav a:hover {
     flex: 1;
 }
 
-.contact-img img{
+.contact-img img {
     width: 600px;
     height: auto;
     box-shadow: 0 0 1rem;
     border-radius: 10px;
     border: 5px solid rgb(85, 107, 47);
 }
-.contact-content{
+
+.contact-content {
     padding: 10px;
     flex: 1;
-    margin-left: 50px   ;
+    margin-left: 50px;
     line-height: 1.8;
 }
 
-.contact-content h2{
-font-size: 25px;
-margin-bottom: 10px;
-font-family: 'Exo 2', sans-serif;
+.contact-content h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'Exo 2', sans-serif;
 
 }
 
-.contact-content p{
+.contact-content p {
     font-family: 'Exo 2', sans-serif;
     font-size: 23px;
 }
 
-span{
+span {
     font-family: 'Exo 2', sans-serif;
     font-size: 20px;
 }
 
-.social-media a{
+.social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -238,47 +255,47 @@ span{
     background: transparent;
     border-radius: 50%;
     font-size: 2.5rem;
-    color:white;
+    color: white;
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
-    background:darkolivegreen;
+    background: darkolivegreen;
 }
 
-.social-media a:hover{
-    background:darkolivegreen;
+.social-media a:hover {
+    background: darkolivegreen;
     color: white;
     box-shadow: 0 0 3rem darkolivegreen;
- }
+}
 
- .text a{
-        position: relative;
-        right:50px;
-        bottom: -270px;
-        color: darkolivegreen;
-        font-size: 50px;
- }
+.text a {
+    position: relative;
+    right: 50px;
+    bottom: -270px;
+    color: darkolivegreen;
+    font-size: 50px;
+}
 
- footer{
+footer {
     width: 100%;
     height: 100px;
-    background-color:darkolivegreen;
+    background-color: darkolivegreen;
     border-radius: 10px;
     box-shadow: 0 0 1rem;
 
- }
+}
 
- .footer-content{
+.footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 7;
- }
+}
 
- .footer-content p{
+.footer-content p {
     font-size: 15px;
-    letter-spacing: 1px ;
-    font-family: 'Exo 2', sans-serif   ;
- }
+    letter-spacing: 1px;
+    font-family: 'Exo 2', sans-serif;
+}
 
 @media screen and (max-width:600px) {
 
@@ -286,12 +303,12 @@ span{
         width: 100%;
         height: 150px;
 
-
     }
 
     header .logo {
         font-size: 30px;
         margin-bottom: 10px;
+        margin-left: 0;
 
 
     }
@@ -332,7 +349,7 @@ span{
     }
 
     .container .content p,
-    .hak-content p{
+    .hak-content p {
         font-size: 15px;
         font-family: 'Exo 2', sans-serif;
     }
@@ -369,7 +386,7 @@ span{
         height: auto;
     }
 
-    .contact{
+    .contact {
         width: 100%;
         height: auto;
         display: flex;
@@ -377,24 +394,26 @@ span{
         justify-content: center;
         align-items: center;
 
- }
- .contact-content p{
-    font-size: 19px;
-    font-family: 'Exo 2', sans-serif;
- }
+    }
 
- span{
-    font-size: 17px;
-    font-family: 'Exo 2', sans-serif;
- }
+    .contact-content p {
+        font-size: 19px;
+        font-family: 'Exo 2', sans-serif;
+    }
 
- .contact-content{
-    padding: 20px;
-    margin: 0;
-    text-align: center;
+    span {
+        font-size: 17px;
+        font-family: 'Exo 2', sans-serif;
+    }
 
- }
-  .contact-img {
+    .contact-content {
+        padding: 20px;
+        margin: 0;
+        text-align: center;
+
+    }
+
+    .contact-img {
         width: 100%;
         height: auto;
         order: 2;
@@ -405,34 +424,37 @@ span{
         height: auto;
     }
 
-    .text{
+    .text {
         display: none;
     }
 
-    .footer{
+    .footer {
         margin-top: 10px;
     }
 
-    .footer p{
+    .footer p {
         font-size: 13px;
     }
 
 
-    .kaybol{
+    .kaybol {
         display: none;
     }
 
-    .kaydet{
+    .kaydet {
         display: block;
+        margin-right:0 ;
+
     }
+
 
 }
 
 @media(max-width:400px) {
-    .sidebar{
-        width: 100%;
+    .kaydet {
+        display: block;
+        margin-right:0 ;
+
     }
 
 }
-
-
